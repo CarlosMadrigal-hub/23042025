@@ -1,0 +1,63 @@
+body {
+    background-color: #f8e1f4; /* Rosa claro para el fondo */
+}
+.bg-primary {
+    background-color: #e1a1c9 !important; /* Rosa suave para encabezados */
+}
+.text-primary {
+    color: #d86ea3 !important; /* Rosa fuerte para los textos */
+}
+.btn-primary {
+    background-color: #d86ea3;
+    border-color: #d86ea3;
+}
+.btn-primary:hover {
+    background-color: #f18baf;
+    border-color: #f18baf;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card.bg-light {
+    background-color: #f7c8e0;
+}
+.form-select {
+    background-color: #f9e4f1;
+    border-color: #f18baf;
+}
+.form-label {
+    font-weight: bold;
+    color: #d86ea3;
+}
+.form-control {
+    background-color: #f9e4f1;
+    border-color: #f18baf;
+}
+.list-group-item {
+    background-color: #f9e4f1;
+    border-color: #f18baf;
+}
+h1, h4 {
+    color: #d86ea3;
+}
+.container {
+    padding-top: 50px;
+}
+/* Flexbox para alinear el contenedor de resultados hacia abajo */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.col-md-6.d-flex {
+    flex-grow: 1;
+}
+#resultado {
+    margin-top: auto; /* Empuja el contenedor hacia abajo */
+}
