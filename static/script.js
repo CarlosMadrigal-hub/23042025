@@ -97,18 +97,17 @@ function mostrarResultados(data) {
     contenedorResultados.innerHTML = `
         <h4 class="text-center text-primary">Ruta Calculada:</h4>
         <p><strong>Ruta:</strong> ${data.ruta.join(" ➔ ")}</p>
-        <h5 class="mt-3 text-primary">Entregas por ciudad:</h5>
-        <ul class="list-group">
-            ${Object.entries(data.viajes_por_ciudad).map(([ciudad, viajes]) =>
-                `<li class="list-group-item">${ciudad}: ${viajes} viaje(s)</li>`).join("")}
-        </ul>
-    
         <p><strong>Tiempo que tarda:</strong> ${data.tiempo_horas} horas</p>
         <p><strong>Distancia total recorrida:</strong> ${data.distancia_km} km</p>
         <p><strong>Gasolina:</strong> ${data.gasolina_usada} L</p>
         <p><strong>Costo por Gasolina:</strong> $${data.costo_gasolina}</p>
 
         <p><strong>Total de paquetes:</strong> ${data.total_paquetes}</p>
+        <h5 class="mt-3 text-primary">Entregas por ciudad:</h5>
+        <ul class="list-group">
+            ${Object.entries(data.viajes_por_ciudad).map(([ciudad, viajes]) =>
+                `<li class="list-group-item">${ciudad}: ${viajes} viaje(s)</li>`).join("")}
+        </ul>
         `;
 }
 
